@@ -40,6 +40,9 @@ class Boot {
           Menu.i("Contact") / "contact",
             Menu.i("Feeback") / "feedback" >> LocGroup("bottom")
           ),
+        Menu.i("Form") / "form"  submenus(
+          Menu.i("Dumb Form") / "dumb"
+          ),
         Menu.i("Sitemap") / "sitemap" >> Hidden >> LocGroup("bottom"),
         Menu.i("Dynamic") / "dynamic", // a page with dynamic content
           Param.menu,
