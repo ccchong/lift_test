@@ -1,24 +1,24 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-  <head><meta content="text/html; charset=UTF-8" http-equiv="content-type" /><title>Home</title></head>
-  <body class="lift:content_id=main">
-    <div id="main" class="lift:surround?with=default;at=content">
-      <!-- behavior of the div -->
-      <div class='lift:comet?type=Chat'>
-        Some chat messages
-        <ul>
-          <li>A message</li>
-          <li class='clearable'>Another message</li>
-          <li class='clearable'>A third message</li>
-        </ul>
-      </div>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='content-type' />
+    <title>Home</title>
+  </head>
+  <body class='lift:content_id=main'>
+    <div id='main' class='lift:surround?with=default&at=content'>
+      <div>Hello World.  Welcome to your Lift application.</div>
+      <div>Check out a page with <a href='/param/foo'>query parameters</a>.</div>
+      <span class='lift:embed?what=_embedme'>
+        replaced with embedded content
+      </span>
+
       <div>
-        <form class='lift:form.ajax'>
-          <input class='lift:ChatIn' id='chat_in' />
-          <input type='submit' value='Say Something' />
-        </form>
+        <ul>
+          <li>Recursive: <a href='/recurse/one'>First snippet</a></li>
+          <li>Recursive: <a href='/recurse/two'>Second snippet</a></li>
+          <li>Recursive: <a href='/recurse/both'>Both snippets</a></li>
+        </ul>
       </div>
     </div>
   </body>
 </html>
-
